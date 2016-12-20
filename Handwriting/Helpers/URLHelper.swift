@@ -13,6 +13,11 @@ class URLHelper {
     
     // MARK: - GENERAL
     
+    /**
+     base url
+     
+     - returns: String
+     */
     class func getBaseURL()->String
     {
         return "https://api.handwriting.io"
@@ -21,6 +26,12 @@ class URLHelper {
    
     // MARK: - Render png
 
+    /**
+     url render png
+     - parameter text: string
+    
+     - returns: String
+     */
     class func urlRenderPNG(text:String)->String
     {
         return URLHelper.getBaseURL() + "/render/png?text=" + text + "&handwriting_id=8X3WQ7TG00B4"
