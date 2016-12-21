@@ -72,7 +72,9 @@ class ServicesManager {
         if(Reachability.isConnectedToNetwork() == false){
             getCachedData()
         }
+        
         let urlm = url.addingPercentEncoding( withAllowedCharacters: NSCharacterSet.urlQueryAllowed)
+      
         Alamofire.request(urlm!,
                           method: .get,
                           parameters: nil,

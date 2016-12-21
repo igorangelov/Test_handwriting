@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextViewDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    /**
+    /*
      Dismiss curent Keyboard
      */
     func dismissKeyboard()
@@ -35,15 +35,17 @@ class ViewController: UIViewController, UITextViewDelegate {
          view.endEditing(true)
     }
     
+    /*
+     Action send text to api
+     */
     @IBAction func sendText() {
         
         let spinnerActivity = MBProgressHUD.showAdded(to: self.view, animated: true);
         spinnerActivity.label.text = "Chargement";
         spinnerActivity.detailsLabel.text = "Traitement des données ...";
         
-
-        
         self.dismissKeyboard()
+        
         ServicesManager.getRenderPNG(text: self.textView.text, callback: { (error , data ) in
             
             if let dataImage  = data 
@@ -61,7 +63,7 @@ class ViewController: UIViewController, UITextViewDelegate {
     
     // MARK: - TableView delegate
     
-    /**
+    /*
      Tableview delegate remove fake placeholder
      */
     func textViewDidBeginEditing(_ textView: UITextView) {
