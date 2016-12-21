@@ -1,4 +1,2 @@
-github "SwiftyJSON/SwiftyJSON"
 github "Alamofire/Alamofire" ~> 4.0
-github "duemunk/Async"
 github "jdg/MBProgressHUD" ~> 1.0.0
