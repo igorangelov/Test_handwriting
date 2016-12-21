@@ -7,16 +7,18 @@ Project is only iPhone optimized
 
 
 ## Project Architecture
-* Views folder contain all view and tableViewCell.
-* ViewControllers folder contain all view controller. 
-* Models folder contain all model and view model. 
-* Manager folder contain ServiceManager and UserManager.
-* Helpers folder contain helper
+* Views folder contains all view and tableViewCell.
+* ViewControllers folder contains all view controller. 
+* Models folder contains all model and view model. 
+* Manager folder contains ServiceManager
+* Helpers folder contains various helper
 
+## Project Test
+* testCacheSimpleWay function in HandwritingTests.swift test SupraCacheManager 
 
 ## API Reference
 
-Dependence manger : [Carthage](https://github.com/Carthage/Carthage)
+Dependence manager: [Carthage](https://github.com/Carthage/Carthage)
 
 Swifty JSON format Data to JSON 
 [github "SwiftyJSON/SwiftyJSON"](https://github.com/SwiftyJSON/SwiftyJSON)
